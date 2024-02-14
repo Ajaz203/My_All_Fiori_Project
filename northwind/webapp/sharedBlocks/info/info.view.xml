@@ -1,0 +1,7 @@
+<mvc:View 
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+
+    <Title text="This is my subSection view"></Title>
+
+</mvc:View>

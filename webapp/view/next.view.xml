@@ -1,0 +1,202 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="myproject.controller.next" xmlns="sap.m">
+
+	<Page
+		id="idPage"
+		title=" My Heading"
+		class= "sapUiResponsivePadding--header" 
+		showNavButton="true"
+		navButtonPress=".onBack">
+	<IconTabBar
+		id="idIconTabBarNoIcons"
+		expanded="{device>/isNoPhone}"
+		class="sapUiResponsiveContentPadding">
+		<items>
+			<IconTabFilter text="View1" key="info">
+ <Table id="dataTable2" items="{path:'ModelData>/'}" mode="MultiSelect" alternateRowColors="true" visible="true" class="sapUiLargeMarginBottom">
+                                    <columns>
+                                        <Column>
+                                            <Text text="Project Id" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Posting Date" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="G/L Acc Type" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="G/L Acc" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Desc" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Comp Curr Amount" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Sales Order" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Journal Entry" />
+                                        </Column>
+                                    </columns>
+                                    <items>
+                                        <ColumnListItem id="ColumnItem2" type="Active">
+                                            <cells>
+                                                <Text text="{ModelData>CPROJECT_UUID_01}" />
+                                                <Text text="{ModelData>CPOSTING_DATE}" />
+                                                <Text text="{ModelData>CGLACCT_TC}" />
+                                                <Text text="{ModelData>CGLACCT}" />
+                                                <Text text="{ModelData>TGLACCT}" />
+                                                <Text text="{ModelData>KCZ8291A7E7AB2E0C5469C18C}" />
+                                                <Text text="{ModelData>KCZ099A5E5FF2637757812202}" />
+                                                <Text text="{ModelData>CACC_DOC_UUID}" />
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                                </Table>		
+									</IconTabFilter>
+			<IconTabFilter text="View2" key="attachments">
+ <Table id="dataTable3" items="{path:'ModelData>/'}" mode="MultiSelect" alternateRowColors="true" visible="true" class="sapUiLargeMarginBottom">
+                                    <columns>
+                                        <Column>
+                                            <Text text="Project Id" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Posting Date" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="G/L Acc Type" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="G/L Acc" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Desc" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Comp Curr Amount" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Sales Order" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Journal Entry" />
+                                        </Column>
+										
+                                        <Column>
+                                            <Text text="others" />
+                                        </Column>
+                                    </columns>
+                                    <items>
+                                        <ColumnListItem id="ColumnItem3" type="Active">
+                                            <cells>
+                                                <Text text="{ModelData>CPROJECT_UUID_01}" />
+                                                <Text text="{ModelData>CPOSTING_DATE}" />
+                                                <Text text="{ModelData>CGLACCT_TC}" />
+                                                <Text text="{ModelData>CGLACCT}" />
+                                                <Text text="{ModelData>TGLACCT}" />
+                                                <Text text="{ModelData>KCZ8291A7E7AB2E0C5469C18C}" />
+                                                <Text text="{ModelData>KCZ099A5E5FF2637757812202}" />
+                                                <Text text="{ModelData>CACC_DOC_UUID}" />
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                                </Table>			</IconTabFilter>
+			<IconTabFilter text="View3" key="notes">
+ <Table id="dataTable4" items="{path:'ModelData>/'}" mode="MultiSelect" alternateRowColors="true" visible="true" class="sapUiLargeMarginBottom">
+                                    <columns>
+                                        <Column>
+                                            <Text text="Project Id" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Posting Date" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="G/L Acc Type" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="G/L Acc" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Desc" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Comp Curr Amount" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Sales Order" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Journal Entry" />
+                                        </Column>
+										
+                                        <Column>
+                                            <Text text="others" />
+                                        </Column>
+                                    </columns>
+                                    <items>
+                                        <ColumnListItem id="ColumnItem4" type="Active">
+                                            <cells>
+                                                <Text text="{ModelData>CPROJECT_UUID_01}" />
+                                                <Text text="{ModelData>CPOSTING_DATE}" />
+                                                <Text text="{ModelData>CGLACCT_TC}" />
+                                                <Text text="{ModelData>CGLACCT}" />
+                                                <Text text="{ModelData>TGLACCT}" />
+                                                <Text text="{ModelData>KCZ8291A7E7AB2E0C5469C18C}" />
+                                                <Text text="{ModelData>KCZ099A5E5FF2637757812202}" />
+                                                <Text text="{ModelData>CACC_DOC_UUID}" />
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                                </Table>			</IconTabFilter>
+			<IconTabFilter text="View4" key="people">
+ <Table id="dataTable5" items="{path:'ModelData>/'}" mode="MultiSelect" alternateRowColors="true" visible="true" class="sapUiLargeMarginBottom">
+                                    <columns>
+                                        <Column>
+                                            <Text text="Project Id" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Posting Date" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="G/L Acc Type" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="G/L Acc" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Desc" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Comp Curr Amount" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Sales Order" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Journal Entry" />
+                                        </Column>
+										
+                                        <Column>
+                                            <Text text="others" />
+                                        </Column>
+                                    </columns>
+                                    <items>
+                                        <ColumnListItem id="ColumnItem5" type="Active">
+                                            <cells>
+                                                <Text text="{ModelData>CPROJECT_UUID_01}" />
+                                                <Text text="{ModelData>CPOSTING_DATE}" />
+                                                <Text text="{ModelData>CGLACCT_TC}" />
+                                                <Text text="{ModelData>CGLACCT}" />
+                                                <Text text="{ModelData>TGLACCT}" />
+                                                <Text text="{ModelData>KCZ8291A7E7AB2E0C5469C18C}" />
+                                                <Text text="{ModelData>KCZ099A5E5FF2637757812202}" />
+                                                <Text text="{ModelData>CACC_DOC_UUID}" />
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                                </Table>			</IconTabFilter>
+		</items>
+	</IconTabBar>
+	</Page>
+</mvc:View>

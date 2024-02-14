@@ -1,0 +1,75 @@
+<mvc:View
+    controllerName="vizframe.controller.mainView"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page
+                    id="page"
+                    title="VizFrame Chart in Ui5"
+                >
+                    <content>
+                    <VBox >
+                        <RadioButtonGroup id='datasetRadioGroup'>
+                            <buttons>
+                                <RadioButton
+                                    class='settingsRadio'
+                                    text="Line"
+                                    select="onDatasetSelectedLine"
+                                />
+                                <RadioButton
+                                    class='settingsRadio'
+                                    text="Column"
+                                    select="onDatasetSelecteColumn"
+                                />
+                                <RadioButton
+                                    class='settingsRadio'
+                                    text="Bullet"
+                                    select="onDatasetSelecteBullet"
+                                />
+                                <RadioButton
+                                    class='settingsRadio'
+                                    text="Area"
+                                    select="onDatasetSelecteArea"
+                                />
+                                     <RadioButton
+                                    class='settingsRadio'
+                                    text="Heatmap"
+                                    select="onDatasetSelecteheatmap"
+                                />
+                                  <RadioButton
+                                    class='settingsRadio'
+                                    text="Radar"
+                                    select="onDatasetSelecteradar"
+                                />
+                                 <RadioButton
+                                    class='settingsRadio'
+                                    text="donut"
+                                    select="onDatasetSelectedonut"
+                                />
+                                <RadioButton
+                                    class='settingsRadio'
+                                    text="Pie"
+                                    select="onDatasetSelectepie"
+                                />
+
+                            </buttons>
+                        </RadioButtonGroup>
+                        <viz:VizFrame
+                            id="chartContainer"
+                            vizType="line"
+                            width="600px"
+                            height="400px"
+                        />
+                    </VBox>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

@@ -1,0 +1,47 @@
+<mvc:View controllerName="northwind.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:m="sap.m"
+    xmlns="sap.uxap"
+    xmlns:info="northwind.sharedBlocks.info">
+   
+   <ObjectPageLayout id="ObjectPageLayout" upperCaseAnchorBar="false" showTitleInHeaderContent="true">
+		<headerTitle>
+			<ObjectPageDynamicHeaderTitle>
+                <expandedHeading>
+                    <m:Title text="My Project"></m:Title>
+                </expandedHeading>
+                <snappedHeading>
+                    <m:Title text="My Project"></m:Title>
+                </snappedHeading>
+
+                <expandedContent>
+                    <m:Text text="Object page layout"></m:Text>
+
+                </expandedContent>
+
+                <snappedContent>
+                    <m:Text text="Object page layout"></m:Text>
+                </snappedContent>
+
+			</ObjectPageDynamicHeaderTitle>
+		</headerTitle>
+
+		<headerContent>
+			<m:ObjectAttribute title="" text="Hello! How are you today"/>
+		</headerContent>
+
+        <sections>
+        		<ObjectPageSection titleUppercase="false" title="Information">
+				    <subSections>
+                        <ObjectPageSubSection >
+						    <blocks>
+							    <info:info />
+						    </blocks>
+					    </ObjectPageSubSection>				    
+                    </subSections>
+                </ObjectPageSection>
+        </sections>
+
+        	</ObjectPageLayout>
+
+</mvc:View>

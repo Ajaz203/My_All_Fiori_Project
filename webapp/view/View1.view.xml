@@ -1,0 +1,267 @@
+<!-- <mvc:View controllerName="myproject.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content />
+    </Page>
+</mvc:View> -->
+<mvc:View
+		height="100%"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:core="sap.ui.core"
+		xmlns:forms="sap.ui.layout.form"
+		xmlns:uxap="sap.uxap"
+		xmlns="sap.m"
+		controllerName="myproject.controller.View1"
+		>
+        <Page id="page">
+        			<Button text="Export to Excel" press="onExportToExcel"/>
+    
+	<uxap:ObjectPageLayout id="ObjectPageLayout" upperCaseAnchorBar="false" useIconTabBar="true" >
+		<uxap:headerTitle>
+			<uxap:ObjectPageHeader
+					objectTitle="My Header Object  Page Section"
+					
+                    />
+		</uxap:headerTitle>
+
+		<uxap:sections>
+			<uxap:ObjectPageSection titleUppercase="false" title="Sample Forms">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="view1" titleUppercase="false">
+						<uxap:blocks>
+						
+                            <Table id="idProducts" items="{path:'ModelData>/'}" mode="MultiSelect" alternateRowColors="true" visible="true" class="sapUiLargeMarginBottom">
+                                    <columns>
+                                        <Column>
+                                            <Text text="Project Id" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Posting Date" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="G/L Acc Type" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="G/L Acc" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Desc" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Comp Curr Amount" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Sales Order" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Journal Entry" />
+                                        </Column>
+                                    </columns>
+                                    <items>
+                                        <ColumnListItem id="ColumnItem" type="Active">
+                                            <cells>
+                                                <Text text="{ModelData>CPROJECT_UUID_01}" />
+                                                <Text text="{ModelData>CPOSTING_DATE}" />
+                                                <Text text="{ModelData>CGLACCT_TC}" />
+                                                <Text text="{ModelData>CGLACCT}" />
+                                                <Text text="{ModelData>TGLACCT}" />
+                                                <Text text="{ModelData>KCZ8291A7E7AB2E0C5469C18C}" />
+                                                <Text text="{ModelData>KCZ099A5E5FF2637757812202}" />
+                                                <Text text="{ModelData>CACC_DOC_UUID}" />
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                                </Table>
+						</uxap:blocks>
+					</uxap:ObjectPageSubSection>
+					
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+			<uxap:ObjectPageSection   titleUppercase="false" showTitle="true">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="view2" titleUppercase="false">
+                            <VBox > 
+                           	 <forms:SimpleForm
+								title="Location"
+								editable="false"
+								layout="ColumnLayout">
+
+								<Label text="Country"/>
+								<Text text="France"/>
+
+								<Label text="Subsidiary"/>
+								<Input ></Input>
+                                
+								<Label text="Subsidiary"/>
+								<Input ></Input>
+                                
+								<Label text="Subsidiary"/>
+								<Input ></Input>
+                                
+								<Label text="Subsidiary"/>
+								<Input ></Input>
+                                
+
+							</forms:SimpleForm> 
+        
+                        <Table id="dataTable2" items="{path:'ModelData>/'}" mode="MultiSelect" alternateRowColors="true" visible="true" class="sapUiLargeMarginBottom">
+                                    <columns>
+                                        <Column>
+                                            <Text text="Project Id" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Posting Date" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="G/L Acc Type" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="G/L Acc" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Desc" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Comp Curr Amount" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Sales Order" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Journal Entry" />
+                                        </Column>
+                                    </columns>
+                                    <items>
+                                        <ColumnListItem id="ColumnItem2" type="Active">
+                                            <cells>
+                                                <Text text="{ModelData>CPROJECT_UUID_01}" />
+                                                <Text text="{ModelData>CPOSTING_DATE}" />
+                                                <Text text="{ModelData>CGLACCT_TC}" />
+                                                <Text text="{ModelData>CGLACCT}" />
+                                                <Text text="{ModelData>TGLACCT}" />
+                                                <Text text="{ModelData>KCZ8291A7E7AB2E0C5469C18C}" />
+                                                <Text text="{ModelData>KCZ099A5E5FF2637757812202}" />
+                                                <Text text="{ModelData>CACC_DOC_UUID}" />
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                                </Table> </VBox>
+		</uxap:ObjectPageSubSection >
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+
+            <uxap:ObjectPageSection titleUppercase="false" showTitle="true">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="view3" titleUppercase="false">
+					
+                         <Table id="dataTable3" items="{path:'ModelData>/'}" mode="MultiSelect" alternateRowColors="true" visible="true" class="sapUiLargeMarginBottom">
+                                    <columns>
+                                        <Column>
+                                            <Text text="Project Id" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Posting Date" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="G/L Acc Type" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="G/L Acc" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Desc" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Comp Curr Amount" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Sales Order" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Journal Entry" />
+                                        </Column>
+                                    </columns>
+                                    <items>
+                                        <ColumnListItem id="ColumnItem3" type="Active">
+                                            <cells>
+                                                <Text text="{ModelData>CPROJECT_UUID_01}" />
+                                                <Text text="{ModelData>CPOSTING_DATE}" />
+                                                <Text text="{ModelData>CGLACCT_TC}" />
+                                                <Text text="{ModelData>CGLACCT}" />
+                                                <Text text="{ModelData>TGLACCT}" />
+                                                <Text text="{ModelData>KCZ8291A7E7AB2E0C5469C18C}" />
+                                                <Text text="{ModelData>KCZ099A5E5FF2637757812202}" />
+                                                <Text text="{ModelData>CACC_DOC_UUID}" />
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                                </Table>
+
+					</uxap:ObjectPageSubSection >
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+
+
+            <uxap:ObjectPageSection titleUppercase="false" showTitle="true">
+				<uxap:subSections>
+                
+					<uxap:ObjectPageSubSection title="view4" titleUppercase="false">
+					
+ <Table id="dataTable4" items="{path:'ModelData>/'}" mode="MultiSelect" alternateRowColors="true" visible="true" class="sapUiLargeMarginBottom">
+                                    <columns>
+                                        <Column>
+                                            <Text text="Project Id" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Posting Date" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="G/L Acc Type" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="G/L Acc" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Desc" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Comp Curr Amount" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Sales Order" />
+                                        </Column>
+                                        <Column>
+                                            <Text text="Journal Entry" />
+                                        </Column>
+                                    </columns>
+                                    <items>
+                                        <ColumnListItem id="ColumnItem4" type="Active">
+                                            <cells>
+                                                <Text text="{ModelData>CPROJECT_UUID_01}" />
+                                                <Text text="{ModelData>CPOSTING_DATE}" />
+                                                <Text text="{ModelData>CGLACCT_TC}" />
+                                                <Text text="{ModelData>CGLACCT}" />
+                                                <Text text="{ModelData>TGLACCT}" />
+                                                <Text text="{ModelData>KCZ8291A7E7AB2E0C5469C18C}" />
+                                                <Text text="{ModelData>KCZ099A5E5FF2637757812202}" />
+                                                <Text text="{ModelData>CACC_DOC_UUID}" />
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                                </Table>
+					</uxap:ObjectPageSubSection >
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+		</uxap:sections>
+	</uxap:ObjectPageLayout>
+    <footer>
+          <Bar>
+            <contentRight>
+              <Button text="next page" press="onPress" />
+            </contentRight>
+          </Bar>
+        </footer>
+      </Page>
+    
+</mvc:View>
